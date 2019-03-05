@@ -1,14 +1,10 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div id="ed-footer">
+    底部
   </div>
 </template>
-
 <script>
 export default {
-  name: 'App'
+  name: 'edFooter'
 }
 </script>
-
-<style>
-</style>

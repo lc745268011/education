@@ -1,14 +1,10 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div id="ed-sidebar">
+    侧边栏
   </div>
 </template>
-
 <script>
 export default {
-  name: 'App'
+  name: 'edSidebar'
 }
 </script>
-
-<style>
-</style>
