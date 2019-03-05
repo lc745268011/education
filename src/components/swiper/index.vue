@@ -35,6 +35,7 @@ export default {
 </script>
 <style lang="scss">
 #ed-swiper {
+  padding: 50px 0;
   .bk{
     position: absolute;
     top: 0;

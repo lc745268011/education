@@ -30,16 +30,22 @@
           </ul>
         </div>
         <div class="header-search fl">
-          <div class="header-hotserach clearfix">
+          <div class="header-hotserach clearfix" v-show="!searchFocus">
             <router-link to="/" class="fl">JAVA入门</router-link>
             <router-link to="/" class="fl">前端入门</router-link>
           </div>
-          <input type="text">
-          <div class="header-search-btn"><i class="iconfont">&#xe623;</i></div>
+          <input type="text" @focus="searchfocus" @blur="searchblur" :class="searchFocus?'focusinput':''">
+          <div :class="searchFocus?'header-search-btn focusicon':'header-search-btn'"><i class="iconfont">&#xe623;</i></div>
         </div>
       </div>
       <div class="header-right fr">
-
+        <div class="fr">
+          <router-link to="/">登录</router-link>/
+          <router-link to="/">注册</router-link>
+        </div>
+        <div class="fr">
+          <router-link to="/" class="header-shop-cart">购物车</router-link>
+        </div>
       </div>
     </div>
 
@@ -47,10 +53,27 @@
 </template>
 <script>
 export default {
-  name: 'edHeader'
+  name: 'edHeader',
+  data () {
+    return {
+      searchFocus: false
+    }
+  },
+  methods: {
+    searchfocus () {
+      this.searchFocus = true
+    },
+    searchblur () {
+      this.searchFocus = false
+    }
+  }
 }
 </script>
 <style lang="scss">
+a {
+  color: #4d555d;
+  padding: 0 10px;
+}
 #ed-header {
   width: 100%;
   height: 70px;
@@ -72,11 +95,6 @@ export default {
       .header-nav {
         height: 100%;
         line-height: 70px;
-        a {
-          color: #4d555d;
-          padding: 0 10px;
-          display: block;
-        }
       }
       .header-search {
         width: 300px;
@@ -118,6 +136,9 @@ export default {
           margin: auto;
           z-index: 1;
         }
+        .focusinput {
+          border-bottom: 1px solid #f01414;
+        }
         .header-search-btn {
           z-index: 9;
           position: absolute;
@@ -133,12 +154,38 @@ export default {
           height: 24px;
           line-height: 24px;
         }
-        .header-search-btn:hover {
+        .header-search-btn:hover,
+        .focusicon {
           background: rgba(240, 20, 20, 0.4);
           i {
             color: #f01414;
           }
         }
+      }
+    }
+    .header-right {
+      height: 70px;
+      line-height: 70px;
+      a {
+        font-size: 14px;
+        color: #999;
+      }
+      a:hover{
+        color: #f01414;
+      }
+      .header-shop-cart {
+        padding: 0 18px;
+        width: auto;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 18px;
+        height: 36px;
+        line-height: 34px;
+        color: #787d82;
+        text-align: center;
+        border: 1px solid #D9DDE1;
+        display:block;
+        margin: 17px 0;
       }
     }
   }
