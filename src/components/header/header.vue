@@ -40,11 +40,11 @@
       </div>
       <div class="header-right fr">
         <div class="fr">
-          <router-link to="/">登录</router-link>/
-          <router-link to="/">注册</router-link>
+          <router-link to="/user/login">登录</router-link>/
+          <router-link to="/user/register">注册</router-link>
         </div>
         <div class="fr">
-          <router-link to="/" class="header-shop-cart">购物车</router-link>
+          <router-link to="/order/shopcart" class="header-shop-cart">购物车</router-link>
         </div>
       </div>
     </div>

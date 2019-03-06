@@ -1,8 +1,7 @@
 <template>
-  <div id="ed-swiper">
-    <div :style="{backgroundImage: 'url(' + bg + ')'}" class="bk"></div>
+  <div id="ed-swiper" class="fl">
     <div class="swiper-main">
-      <el-carousel :interval="5000" arrow="hover" height="316px" @change="changeSwiper">
+      <el-carousel :interval="5000" arrow="hover" height="360px" @change="changeSwiper">
         <el-carousel-item v-for="(item,index) in swiper" :key="index">
           <img :src="item.img" alt="">
         </el-carousel-item>
@@ -29,31 +28,16 @@ export default {
     changeSwiper (key1, key2) {
       console.log(key1, key2)
       this.bg = this.swiper[key1].img
+      this.$emit('bgfun', this.bg)
     }
   }
 }
 </script>
 <style lang="scss">
 #ed-swiper {
-  padding: 50px 0;
-  .bk{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 180px;
-    background-size: cover;
-    transition: all .3s;
-    opacity: 0.3;
-    z-index: -1;
-    -webkit-filter: blur(100px);
-    -moz-filter: blur(100px);
-    -o-filter: blur(100px);
-    -ms-filter: blur(100px);
-    filter: blur(100px);
-    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='100');
-  }
+  width: 900px;
   .swiper-main {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     img {
       height: 100%;
