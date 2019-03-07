@@ -47,7 +47,7 @@ export default {
   .main-box{
     width: 1110px;
     margin: 50px auto;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
   }
   .bk{

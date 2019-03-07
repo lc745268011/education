@@ -3,8 +3,8 @@
     <ul class="firsttype">
       <li v-for="(item,index) in typelist" :key="index">
         {{item.name}}
-        <ul class="secondtype">
-          <li v-for="(m,index) in item.children" :key="index">
+        <ul class="secondtype clearfix">
+          <li v-for="(m,index) in item.children" :key="index" class="fl">
             <router-link to="m.link">
               {{m.name}}
             </router-link>
@@ -20,76 +20,76 @@ export default {
     return {
       typelist: [
         {
-          name: '1',
+          name: '前沿 / 区块链 / 人工智能',
           children: [
             {
-              name: '1-1',
+              name: '区块链',
               link: '/'
             },
             {
-              name: '1-2',
+              name: '人工学习',
               link: '/'
             },
             {
-              name: '1-3',
+              name: '机器语言',
               link: '/'
             },
             {
-              name: '1-4',
+              name: '微服务',
               link: '/'
             },
             {
-              name: '1-5',
+              name: '计算机视觉',
               link: '/'
             }
           ]
         },
         {
-          name: '2',
+          name: '前沿 / 区块链 / 人工智能',
           children: [
             {
-              name: '2-1',
+              name: '区块链',
               link: '/'
             },
             {
-              name: '2-2',
+              name: '人工学习',
               link: '/'
             },
             {
-              name: '2-3',
+              name: '机器语言',
               link: '/'
             },
             {
-              name: '2-4',
+              name: '微服务',
               link: '/'
             },
             {
-              name: '2-5',
+              name: '计算机视觉',
               link: '/'
             }
           ]
         },
         {
-          name: '3',
+          name: '前沿 / 区块链 / 人工智能',
           children: [
             {
-              name: '3-1',
+              name: '区块链',
               link: '/'
             },
             {
-              name: '3-2',
+              name: '人工学习',
               link: '/'
             },
             {
-              name: '3-3',
+              name: '机器语言',
               link: '/'
             },
             {
-              name: '3-4',
+              name: '微服务',
               link: '/'
             },
             {
-              name: '3-5',
+              name: '计算机视觉',
               link: '/'
             }
           ]
@@ -105,7 +105,7 @@ export default {
   width: 210px;
   height: 360px;
   background: #333;
-  // padding: 10px;
+  padding: 10px 0 10px 10px;
   box-sizing: border-box;
   .firsttype{
     position: relative;
@@ -115,15 +115,32 @@ export default {
       line-height: 60px;
       padding: 0 16px;
       box-sizing: border-box;
+      cursor: pointer;
+      font-size: 14px;
       .secondtype{
         background:#fff;
         display: none;
         z-index: 9;
         position: absolute;
-        top: 0;
-        left: 210px;
-        width: 450px;
+        top: -10px;
+        left: 200px;
+        width: 650px;
         height: 360px;
+      }
+    }
+    li:hover{
+      background: #999;
+      color: #fff;
+      border-radius: 5px 0 0 5px;
+      .secondtype{
+        display: block;
+        li:hover{
+          background: #fff;
+          display: inline-block;
+          a{
+            color: #f01414;
+          }
+        }
       }
     }
   }
