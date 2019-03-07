@@ -100,7 +100,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #edtype {
   width: 210px;
   height: 360px;
@@ -126,6 +126,9 @@ export default {
         left: 200px;
         width: 650px;
         height: 360px;
+        a{
+          color: #999;
+        }
       }
     }
     li:hover{

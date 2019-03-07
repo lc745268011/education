@@ -10,7 +10,7 @@
         <div class="header-nav fl">
           <ul class="clearfix">
             <li class="fl">
-              <router-link to="/">免费课程</router-link>
+              <router-link to="/" active-class="active">免费课程</router-link>
             </li>
             <li class="fl">
               <router-link to="/">实战课程</router-link>
@@ -69,7 +69,7 @@ export default {
   }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 a {
   color: #4d555d;
   padding: 0 10px;
@@ -95,6 +95,9 @@ a {
       .header-nav {
         height: 100%;
         line-height: 70px;
+        .active{
+          color: #f01414;
+        }
       }
       .header-search {
         width: 300px;
