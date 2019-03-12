@@ -35,7 +35,7 @@ export default {
 </script>
 <style lang="scss">
 #ed-swiper {
-  width: 900px;
+  width: 890px;
   .swiper-main {
     width: 100%;
     margin: 0 auto;

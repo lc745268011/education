@@ -8,6 +8,9 @@
         <ed-swiper @bgfun="bgfun"></ed-swiper>
       </div>
       <ed-recommend-list></ed-recommend-list>
+      <ed-recommend-list></ed-recommend-list>
+      <ed-recommend-list></ed-recommend-list>
+      <ed-recommend-list></ed-recommend-list>
     </div>
     <ed-sidebar></ed-sidebar>
     <ed-footer></ed-footer>
@@ -45,10 +48,11 @@ export default {
 </script>
 <style lang="scss">
   .main-box{
-    width: 1110px;
-    margin: 50px auto;
+    width: 1100px;
+    margin: 50px auto 0;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 2px 8px 0 rgba(7, 17, 27, 0.06);
   }
   .bk{
     position: absolute;

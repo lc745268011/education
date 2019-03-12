@@ -76,6 +76,7 @@ a {
 }
 #ed-header {
   width: 100%;
+  min-width: 1100px;
   height: 70px;
   box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
   background: #fff;
@@ -189,6 +190,26 @@ a {
         border: 1px solid #D9DDE1;
         display:block;
         margin: 17px 0;
+      }
+    }
+  }
+}
+@media screen and(max-width: 1200px) {
+  #ed-header{
+    .header-main {
+      width: 1100px;
+      .header-left {
+        .header-search{
+          width: 220px;
+          .header-hotserach {
+            a{
+              padding: 0 8px;
+            }
+          }
+          input{
+            width: 100%;
+          }
+        }
       }
     }
   }

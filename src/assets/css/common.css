@@ -1,6 +1,6 @@
 @charset "utf-8";
 *{
-margin:0; padding:0;
+margin:0; padding:0;font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td { margin: 0; padding: 0; font-family: "微软雅黑"; }
 fieldset, img { border: 0; }
@@ -8,12 +8,12 @@ ul, ol, li { list-style: none; font-family:'Microsoft YaHei'; }
 /*iconfont*/
 @font-face {
   font-family: 'iconfont';  /* project id 1071281 */
-  src: url('//at.alicdn.com/t/font_1071281_5cvv494yljx.eot');
-  src: url('//at.alicdn.com/t/font_1071281_5cvv494yljx.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1071281_5cvv494yljx.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1071281_5cvv494yljx.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1071281_5cvv494yljx.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1071281_5cvv494yljx.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1071281_7i4p8i5fjgs.eot');
+  src: url('//at.alicdn.com/t/font_1071281_7i4p8i5fjgs.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1071281_7i4p8i5fjgs.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1071281_7i4p8i5fjgs.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1071281_7i4p8i5fjgs.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1071281_7i4p8i5fjgs.svg#iconfont') format('svg');
 }
 .iconfont{
   font-family:"iconfont" !important;

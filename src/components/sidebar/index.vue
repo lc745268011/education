@@ -27,9 +27,11 @@ export default {
   position: fixed;
   right: 0;
   width: 60px;
+  z-index: 99;
   top: 50%;
   box-shadow: 0px 4px 12px 0px rgba(7, 17, 27, 0.1);
   padding: 0 12px;
+  background: #fff;
   box-sizing: border-box;
   li{
     width: 100%;
