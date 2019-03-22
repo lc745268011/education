@@ -21,7 +21,7 @@ export default {
     }
   },
   created () {
-    this.axios.post('api/portal/index/slide')
+    this.axios.post(this.HOST + '/portal/index/slide')
       .then(res => {
         this.swiper = res.data
       }).catch(function (res) {

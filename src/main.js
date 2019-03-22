@@ -16,7 +16,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(VueAxios, axios)
 Vue.prototype.$axios = axios// 公共样式
 Vue.use(ElementUI)
-Vue.prototype.HOST = '/api'
+Vue.prototype.HOST = process.env.API_HOST
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
