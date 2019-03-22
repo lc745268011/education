@@ -30,8 +30,7 @@ export default {
   },
   methods: {
     changeSwiper (key1, key2) {
-      // console.log(key1, key2)
-      this.bg = this.swiper[key1].img
+      this.bg = this.swiper[key1].image
       this.$emit('bgfun', this.bg)
     }
   }

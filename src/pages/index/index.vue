@@ -2,7 +2,7 @@
   <div id="ed-index">
     <ed-header></ed-header>
     <div id="ed-index-main">
-      <div :style="{backgroundImage: 'url(' + bg + ')'}" class="bk"></div>
+      <div v-if="bg" :style="{backgroundImage: `url(${HOST}/upload/${bg})`}" class="bk"></div>
       <div class="main-box clearfix">
         <ed-type></ed-type>
         <ed-swiper @bgfun="bgfun"></ed-swiper>
