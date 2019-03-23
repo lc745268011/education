@@ -11,6 +11,7 @@
       <ed-recommend-list></ed-recommend-list>
       <ed-recommend-list></ed-recommend-list>
       <ed-recommend-list></ed-recommend-list>
+      <ed-water-fall></ed-water-fall>
     </div>
     <ed-sidebar></ed-sidebar>
     <ed-footer></ed-footer>
@@ -23,6 +24,7 @@ import edSwiper from '../../components/swiper/index'
 import edRecommendList from '../../components/recommend/index'
 import edSidebar from '../../components/sidebar/index'
 import edType from '../../components/edtype/index'
+import edWaterFall from '../../components/waterfall/index'
 export default {
   name: 'edIndex',
   data () {
@@ -42,7 +44,8 @@ export default {
     edSwiper,
     edRecommendList,
     edSidebar,
-    edType
+    edType,
+    edWaterFall
   }
 }
 </script>
